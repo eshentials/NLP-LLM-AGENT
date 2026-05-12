@@ -1,0 +1,24 @@
+# ─── Credential files (never commit contents) ─────────────────────────────────
+# Put real values ONLY in `.env` on your machine — not here, never in tracked code.
+#
+# `.env` must define (KEY=value pairs, no quotes unless needed):
+#   GROQ_API_KEY=<your groq api key>
+#   SERPER_API_KEY=<your serper api key>
+#
+.env
+.env.*
+secrets.json
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Run outputs
+outputs/

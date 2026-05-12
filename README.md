@@ -1,6 +1,6 @@
 # Research Paper Analysis Agent
 
-A **multi-step LLM agent** built with the Grok API that takes any research topic and produces a structured, evidence-based research brief through a six-step pipeline.
+A **multi-step LLM agent** built with the Groq API that takes any research topic and produces a structured, evidence-based research brief through a six-step pipeline.
 
 ---
 
@@ -58,14 +58,9 @@ No step can be removed without breaking the chain. Step 3 cannot run without Ste
 pip install -r requirements.txt
 ```
 
-### 2. API keys
+### 2. Credentials
 
-The keys are already set in `agent.py`. If you want to use environment variables instead, replace the hardcoded keys with:
-
-```python
-GROQ_API_KEY   = os.environ["GROQ_API_KEY"]
-SERPER_API_KEY = os.environ["SERPER_API_KEY"]
-```
+Create a `.env` file in this directory before running — required variable names are listed only in `.gitignore` comments (those values must never be committed).
 
 ---
 
